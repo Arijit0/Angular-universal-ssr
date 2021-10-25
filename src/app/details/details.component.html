@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<div class="food-details-holder container">
+    <div class="image-holder">
+        <img [src]="productDetails.image ? productDetails.image : 'assets/Image-Not-Available.png'" alt="">
+
+        
+    </div>
+    <div class="details-holder">
+        <div class="category">
+            <p class="cat">Food Title: {{productDetails.title}}</p>
+        </div>
+        <div class="name">
+            <p class="nam"><span>Source Name:</span> {{productDetails.sourceName}}</p>
+        </div>
+        <!-- <div class="nutrients-holder">
+           <div class="left-side">
+                <div class="CHOCDF">Carbohydrate</div>
+                <div class="ENERC_KCAL">Energy KCAL</div>
+                <div class="FAT">Fat</div>
+                <div class="FIBTG">Fibtg</div>
+                <div class="PROCNT">Protein</div>
+           </div>
+           <div class="right-side">
+                <div class="CHOCDF">{{foodDetails.food.nutrients.CHOCDF}}</div>
+                <div class="ENERC_KCAL">{{foodDetails.food.nutrients.ENERC_KCAL}}</div>
+                <div class="FAT">{{foodDetails.food.nutrients.FAT}}</div>
+                <div class="FIBTG">{{foodDetails.food.nutrients.FIBTG}}</div>
+                <div class="PROCNT">{{foodDetails.food.nutrients.PROCNT}}</div>
+           </div>
+        </div> -->
+    </div>
+</div>

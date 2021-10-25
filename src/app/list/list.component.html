@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+
+<ul class="container">
+    <li class="holder" *ngFor="let eachList of productList; let i = index" (click)="FoodDetails(eachList,i)">
+        <div class="img">
+            <img [src]="eachList.image ? eachList.image : 'assets/Image-Not-Available.png'" alt="">
+        </div>
+        <div class="title">{{eachList.title}}</div>
+        <div class="category-holder">
+            <div class="category-title"></div>
+            <div class="category-amount">{{eachList.title}}</div>
+        </div>
+    </li>
+</ul>
